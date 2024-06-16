@@ -1,17 +1,9 @@
 {
   "name": "mi-proyecto",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node server.js"
-  },
   "dependencies": {
-    "express": "^4.18.1",
-    "node-fetch": "^3.2.10",
-    "cors": "^2.8.5"
-  },
-  "author": "",
-  "license": "ISC"
+    "node-fetch": "^3.0.0"
+  }
 }
