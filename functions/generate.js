@@ -1,6 +1,6 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
-export async function handler(event, context) {
+exports.handler = async function(event, context) {
   const apiKey = process.env.OPENAI_API_KEY;
 
   const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -20,4 +20,4 @@ export async function handler(event, context) {
     statusCode: 200,
     body: JSON.stringify(data)
   };
-}
+};
